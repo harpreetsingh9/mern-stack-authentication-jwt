@@ -10,9 +10,9 @@ function App() {
     <BrowserRouter>
       <h1>Login and Register user</h1>
       <main>
-        <Route path="/signin" component={SigninScreen}></Route>
-        <Route path="/register" component={RegisterScreen}></Route>
-        <Route path="/profile" component={ProfileScreen}></Route>
+        <Route path="/signin" exact component={SigninScreen}></Route>
+        <Route path="/register" exact component={RegisterScreen}></Route>
+        <Route path="/profile" exact component={ProfileScreen}></Route>
         {/* <Route path="/" component={HomeScreen} exact></Route> */}
       </main>
     </BrowserRouter>

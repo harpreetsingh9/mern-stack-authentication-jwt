@@ -36,7 +36,7 @@ function SigninScreen() {
   };
 
   return (
-    <div>
+    <div className="container">
       <form className="form" onSubmit={submitHandler}>
         <FormControl>
           <InputLabel htmlFor="email">Email address</InputLabel>

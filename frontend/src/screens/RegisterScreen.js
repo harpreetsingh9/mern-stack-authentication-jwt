@@ -20,30 +20,10 @@ function RegisterScreen() {
     const res = JSON.stringify(data);
     console.log(res);
     history.push("/profile");
-
-    // Axios.post("/api/users/register", {
-    //   name,
-    //   email,
-    //   password,
-    // })
-    //   .then((res) => history.push("/profile"))
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
-    // console.log(data);
-
-    // const result = data.json();
-    // console.log(result);
-    // if (result.status === 422 || !data) {
-    //   window.alert("Email already exits");
-    //   console.log("Email exit");
-    // } else {
-    //   window.alert("data post successfull");
-    // }
   };
 
   return (
-    <div>
+    <div className="container">
       <form className="form" onSubmit={submitHandler}>
         <FormControl>
           <InputLabel htmlFor="name">Full Name</InputLabel>
